@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp2.Order"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+                xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+Title="Доставка" Height="550" Width="800">
+    <Grid Background="LightCyan">
+        <Border MinWidth="400" Margin ="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Доставка."   FontSize="18"  FontWeight="Bold" Height="22" Width="150" Margin="350 0 0 25"/>
+                <TextBlock Text="Вы успешно заказали товар."   FontSize="22"  FontWeight="Bold" Height="30" Width="350" Margin="0 0 0 0"/>
+                <TextBlock Text="трек-номер заказа:" FontSize="18" FontWeight="UltraBlack" Height="30" Width="180" Margin="0 20 300 0"/>
+                <TextBlock Text="6843695474363"  FontSize="18" FontWeight="UltraBlack" Height="30" Width="180" Margin="0 0 300 0"/>
+                <Button Content="Посмотреть статус доставки" Click="Button_Status_click" Margin="250  50 0 0 " />
+                <Button x:Name="Return"  Content="Вернуться в кабинет" Click="Button_return_click" Margin="0 -32 300 0 " />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

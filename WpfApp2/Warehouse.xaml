@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp2.Warehouse"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    Title="Склад" Height="550" Width="800">
+    <Grid Background="LightCyan">
+        <Border MinWidth="400" Margin ="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+
+                <TextBlock Text="Склад"  FontSize="15"  FontWeight="Bold" Height="18" Width="150" Margin="430 0 0 25"/>
+                <TextBlock Text="На вашем складе отсутсвуют лекарства."  FontSize="25" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Button  x:Name="RegButton" Content="Вернуться в личный кабинет" Margin="0 20" Click="Button_return_Click"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>
